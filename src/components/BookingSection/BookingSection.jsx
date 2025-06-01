@@ -1,6 +1,7 @@
+import { useState } from 'react'
 import './BookingSection.css'
 import BookingCard from './BookingCard/BookingCard'
-import Button from '../Button/Button'
+import BookingModal from './BookingModal/BookingModal'
 
 const bookingOptions = [
   {
@@ -16,6 +17,25 @@ const bookingOptions = [
 ]
 
 function BookingSection() {
+  const [selectedTitle, setSelectedTitle] = useState(null)
+  const [showModal, setShowModal] = useState(false)
+  const [showThankYou, setShowThankYou] = useState(false)
+
+  const handleOpenModal = (title) => {
+    setSelectedTitle(title)
+    setShowModal(true)
+  }
+
+  const handleFormSubmit = () => {
+    setShowModal(false)
+    setShowThankYou(true)
+    setTimeout(() => setShowThankYou(false), 3000)
+  }
+
+  const handleCloseModal = () => {
+    setShowModal(false)
+  }
+
   return (
     <div className="booking-section">
       <h2>Prenota la Tua Visita</h2>
@@ -25,10 +45,27 @@ function BookingSection() {
 
       <div className="booking-options">
         {bookingOptions.map((option, index) => (
-          <BookingCard key={index} {...option} />
+          <BookingCard
+            key={index}
+            {...option}
+            onClick={() => handleOpenModal(option.title)}
+          />
         ))}
       </div>
 
+      {showModal && (
+        <BookingModal
+          selectedTitle={selectedTitle}
+          onClose={handleCloseModal}
+          onSubmitSuccess={handleFormSubmit}
+        />
+      )}
+
+      {showThankYou && (
+        <div className="thank-you-message">
+          Grazie per la tua prenotazione! Ti contatteremo via email.
+        </div>
+      )}
     </div>
   )
 }
