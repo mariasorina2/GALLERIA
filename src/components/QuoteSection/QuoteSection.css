@@ -1,0 +1,35 @@
+.quote-section {
+  background-color: #f8f8f6;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.quote-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.quote-divider {
+  width: 50px;
+  height: 2px;
+  background-color: #aaa;
+  margin: 0.5rem auto 2rem auto;
+}
+
+blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #333;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}

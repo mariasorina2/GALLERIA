@@ -1,0 +1,68 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e3db;
+  padding: 4rem 2rem;
+  gap: 3rem;
+  min-height: 400px;
+  box-sizing: border-box;
+}
+
+.hero-image {
+  width: 500px;
+  height: 320px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+.hero-text {
+  width: 400px;
+  flex-shrink: 0;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: serif;
+}
+
+.hero-text h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.dots {
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #111;
+}

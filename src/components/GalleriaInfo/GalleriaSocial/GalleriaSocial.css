@@ -1,0 +1,23 @@
+.galleria-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.icon-wrapper {
+  color: #1a1a1a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.icon-wrapper:hover {
+  color: gray;
+}
+
+.icon-wrapper svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
