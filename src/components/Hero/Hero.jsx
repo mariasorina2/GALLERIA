@@ -1,21 +1,25 @@
 import { useState } from "react"
 import "./Hero.css"
 
+import falseMirror from "./../../assets/GalleriaPic/the-false-mirror.jpg"
+import golconda from "./../../assets/GalleriaPic/golconda.jpg"
+import figlio from "./../../assets/GalleriaPic/Il-figlio-delluomo.jpg"
+
 const artworks = [
     {
-        image: "/src/assets/GalleriaPic/the-false-mirror.jpg",
+        image: falseMirror,
         title: "Arte Surrealista",
         artist: "Renè Magritte",
         quote: "Oltre l’apparenza, in bilico tra logica e mistero."
     },
     {
-        image: "/src/assets/GalleriaPic/golconda.jpg",
+        image: golconda,
         title: "Pioggia d’uomini",
         artist: "Renè Magritte",
         quote: "Il reale si ripete fino a diventare irreale."
     },
     {
-        image: "/src/assets/GalleriaPic/Il-figlio-delluomo.jpg",
+        image: figlio,
         title: "Il figlio dell’uomo",
         artist: "Renè Magritte",
         quote: "L’invisibile è ciò che ci definisce."
