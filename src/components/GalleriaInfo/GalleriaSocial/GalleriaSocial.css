@@ -5,15 +5,27 @@
 }
 
 .icon-wrapper {
+  background-color: #f0f0f0;
   color: #1a1a1a;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: color 0.2s ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
 }
 
 .icon-wrapper:hover {
-  color: gray;
+  background-color: #ddd;
+  color: #000;
+  transform: scale(1.1);
+}
+
+.icon-wrapper:active {
+  transform: scale(0.95);
+  background-color: #ccc;
 }
 
 .icon-wrapper svg {

@@ -66,3 +66,35 @@
 .dot.active {
   background-color: #111;
 }
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+     align-items: center;
+    text-align: center;
+  }
+
+  .hero-image,
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-image {
+    height: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+}
+

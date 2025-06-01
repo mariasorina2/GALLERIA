@@ -43,3 +43,23 @@
 .nav-links a.active {
   border-bottom: 2px solid #3e3e3e;
 }
+
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .logo img {
+    height: 40px;
+    width: 60px;
+  }
+}

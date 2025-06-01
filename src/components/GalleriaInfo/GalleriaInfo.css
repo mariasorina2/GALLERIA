@@ -108,3 +108,19 @@ address {
   background-color: white;
 }
 
+@media (max-width: 600px) {
+  .galleria-info {
+    padding: 3rem 1rem;
+  }
+
+  .galleria-info-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+   .galleria-social {
+    justify-content: center;
+  }
+}
+
